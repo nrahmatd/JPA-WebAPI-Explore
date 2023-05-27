@@ -3,7 +3,6 @@ package com.nrahmatd.springboot.REST.Point.Of.Sale.controller
 import com.nrahmatd.springboot.REST.Point.Of.Sale.basemodel.ResponseModel
 import com.nrahmatd.springboot.REST.Point.Of.Sale.entities.Customer
 import com.nrahmatd.springboot.REST.Point.Of.Sale.entities.Supplier
-import com.nrahmatd.springboot.REST.Point.Of.Sale.entities.User
 import com.nrahmatd.springboot.REST.Point.Of.Sale.service.CustomerService
 import com.nrahmatd.springboot.REST.Point.Of.Sale.service.SupplierService
 import com.nrahmatd.springboot.REST.Point.Of.Sale.service.UserService
@@ -13,7 +12,7 @@ import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.*
 
 
-@Controller
+@RestController
 @RequestMapping(path= ["/restapi"])
 class MainController {
     @Autowired
